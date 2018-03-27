@@ -24,7 +24,7 @@ Caffe Inference is a script that runs inference for an image and dumps all the i
 
 ## Dump Layers of various frameworks
 
-To check the intermediate values of each layer in the following frameworks while running inference. 
+To check the intermediate values of each layer in the following frameworks while running inference, use the following repositories. 
 
 * [Caffe](https://github.com/lcskrishna/caffe/tree/dump_layers)
 

@@ -21,3 +21,17 @@ training your own network in caffe2.
 * [Caffe-Inference](https://github.com/lcskrishna/caffe_inference)
 
 Caffe Inference is a script that runs inference for an image and dumps all the intermediate layer binary data.
+
+## Dump Layers of various frameworks
+
+To check the intermediate values of each layer in the following frameworks while running inference. 
+
+* [Caffe](https://github.com/lcskrishna/caffe/tree/dump_layers)
+
+Dump intermediate layers from caffe layer. 
+Note: make sure you create an out directory, otherwise it gives a SegmentationFault.
+
+* [Caffe2](https://github.com/lcskrishna/caffe2)
+
+Dump intermediate layers from caffe2.
+Note: make sure you create a folder named dump from a script that executes caffe2 network.

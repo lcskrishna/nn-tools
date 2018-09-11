@@ -27,8 +27,6 @@ Caffe Inference is a script that runs inference for an image and dumps all the i
 [deep-learning-docker](https://github.com/lcskrishna/deep-learning-docker)
 Here is the link to dockers for various frameworks. Each docker contains a framework installed in a fresh ubuntu installation.
 
-
-
 ## Dump Layers of various frameworks
 
 To check the intermediate values of each layer in the following frameworks while running inference, use the following repositories. 
@@ -38,7 +36,14 @@ To check the intermediate values of each layer in the following frameworks while
 Dump intermediate layers from caffe layer. 
 Note: make sure you create an out directory, otherwise it gives a SegmentationFault.
 
+
 * [Caffe2](https://github.com/lcskrishna/caffe2)
 
 Dump intermediate layers from caffe2.
 Note: make sure you create a folder named dump from a script that executes caffe2 network.
+
+## Quicker setup instructions and scripts
+
+[setup-files](https://github.com/lcskrishna/nn-tools/tree/master/setup-files)
+Ready-made scripts for faster installation of softwares.
+

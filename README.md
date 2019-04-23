@@ -44,9 +44,16 @@ Note: make sure you create a folder named dump from a script that executes caffe
 
 ## Quicker setup instructions and scripts
 
-[setup-files](https://github.com/lcskrishna/nn-tools/tree/master/setup-files)
+* [setup-files](https://github.com/lcskrishna/nn-tools/tree/master/setup-files)
 Ready-made scripts for faster installation of softwares.
 
-[vim-config](https://github.com/lcskrishna/nn-tools/tree/master/vim-config)
+* [vim-config](https://github.com/lcskrishna/nn-tools/tree/master/vim-config)
 vimrc configuration file for developing better software using vim.
+
+To run the vim-config quickly,
+```
+wget https://raw.githubusercontent.com/lcskrishna/nn-tools/master/vim-config/setup-vim.sh
+sh setup-vim.sh
+rm -rf setup-vim.sh
+```
 

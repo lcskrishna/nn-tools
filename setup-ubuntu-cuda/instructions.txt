@@ -1,0 +1,60 @@
+sudo apt-get update
+
+sudo apt-get install -y --no-install-recommends \
+      build-essential \
+      git \
+      libgoogle-glog-dev \
+      libgtest-dev \
+      libiomp-dev \
+      libleveldb-dev \
+      liblmdb-dev \
+      libopencv-dev \
+      libopenmpi-dev \
+      libsnappy-dev \
+      libprotobuf-dev \
+      openmpi-bin \
+      openmpi-doc \
+      protobuf-compiler \
+      curl \
+      vim \
+      
+
+sudo add-apt-repository ppa:deadsnakes/ppa
+sudo apt-get update
+sudo apt install python3.8 python3.8-dev python3.8-venv
+alias python=python3.8
+curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
+python get-pip.py
+
+Inside ~/.bashrc
+export PATH="$PATH:/home/chaitanya/.local/bin"
+source ~/.bashrc
+
+pip install --user \
+      future \
+      numpy \
+      protobuf \
+      typing \
+      hypothesis
+
+sudo apt-get install -y --no-install-recommends \
+      libgflags-dev \
+      cmake
+
+### CUDA Installation
+
+wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu1804/x86_64/cuda-ubuntu1804.pin
+
+sudo mv cuda-ubuntu1804.pin /etc/apt/preferences.d/cuda-repository-pin-600
+
+wget https://developer.download.nvidia.com/compute/cuda/11.6.0/local_installers/cuda-repo-ubuntu1804-11-6-local_11.6.0-510.39.01-1_amd64.deb
+
+sudo dpkg -i cuda-repo-ubuntu1804-11-6-local_11.6.0-510.39.01-1_amd64.deb
+
+sudo apt-key add /var/cuda-repo-ubuntu1804-11-6-local/7fa2af80.pub
+
+sudo apt-get update
+
+sudo apt-get -y install cuda
+
+sudo reboot

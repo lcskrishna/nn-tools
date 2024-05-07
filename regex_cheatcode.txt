@@ -1,0 +1,5 @@
+^               # start of input
+(?=.*?\d)       # lookahead to make sure at least one digit is there
+(?=.*?[a-zA-Z]) # lookahead to make sure at least one letter is there
+[a-zA-Z\d]+     # regex to match 1 or more of digit or letters
+$               # end of input

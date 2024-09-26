@@ -32,7 +32,8 @@ def dump_hipblaslt_commands(commands):
     print ("OK: dumped hipblaslt-script.sh")
 
 def main():
-    commands = os.path.abspath(args.rocblas_script)
+    rocblas_script = os.path.abspath(args.rocblas_script)
+    commands = generate_hipblaslt_commands(rocblas_script)
     dump_hipblaslt_commands(commands)
 
 if __name__ == '__main__':
